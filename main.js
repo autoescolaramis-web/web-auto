@@ -1,0 +1,600 @@
+const CONTENT = {
+    ca: {
+        tagline: "PEGANT FORT",
+        nav: ["PERMISOS", "MÈTODE", "AVANTATGES", "MATRÍCULA"],
+        hero: {
+            title: "AUTOESCOLA", subtitle: "RAMIS",
+            quote: "Perque soc el que soc gràcies a vosaltres!!",
+            btn1: "RESERVA LA TEUA PLAÇA", pack: "PACK ESTRELLA B", offer: "VULL ESTA OFERTA",
+            include: ["10 Pràctiques VIP", "Teòrica Express", "Trasllats Inclosos", "Material Digital"]
+        },
+        stats: ["Alumnes Aprovats", "Èxit Teòrica", "Anys d'Experiència"],
+        intensives: {
+            t1: "CURSOS", t2: "INTENSIUS", desc: "Dissenyats per a qui no té temps a perdre. El carnet, més ràpid que mai.",
+            card1: "TEÒRICA EXPRESS", card1d: "7 dies de classes intensives amb tot el que necessites per aprovar a la primera.",
+            card2: "ONLINE 24/7", card2d: "Accés total a la plataforma de tests d'última generació des de qualsevol dispositiu."
+        },
+        permisosTitle: ["EL TEU", "CARNET"],
+        permisosList: [
+            { n: "Permís B", d: "El carnet de cotxe de tota la vida.", p: "800€" },
+            { n: "B Automàtic", d: "Oblida't de les marxes. Fàcil i còmode.", p: "CONSULTAR" },
+            { n: "Motos", d: "A1 / A2 / AM. Sent la llibertat sobre rodes.", p: "CONSULTAR" }
+        ],
+        reviews: {
+            title: "ELS NOSTRES", subtitle: "ALUMNES",
+            items: [
+                { name: "Marc S.", text: "Mètode increïble. Vaig aprovar la teòrica en una setmana!", stars: 5 },
+                { name: "Elena R.", text: "Els trasllats des de Simat són un luxe. Moltes gràcies!", stars: 5 },
+                { name: "Joan M.", text: "Vehicles moderns i profes molt pacients.", stars: 5 }
+            ]
+        },
+        process: { title: "EL MÈTODE", subtitle: "RAMIS", steps: ["Inscripció", "Teòrica", "Volant", "Llicència"] },
+        why: ["+25 ANYS", "ALTA TAXA APROVATS", "VEHICLES MODERNS", "RECOLLIDA A CASA", "PAGAMENT FLEXIBLE", "PROFES VIPS"],
+        locations: {
+            title: "VALLDIGNA", subtitle: "POWER",
+            desc: "Si ets de Simat o Benifairó, t'arrepleguem de franc. Tu només has de centrar-te en conduir!",
+            labels: ["ADREÇA", "CONTACTE"]
+        },
+        faq: {
+            title: "DUBTES", subtitle: "COMUNS",
+            items: [
+                { q: "Quina edat necessite?", a: "Pots matricular-te als 17 anys i 9 mesos per a la teòrica." },
+                { q: "Puc pagar a terminis?", a: "Sí! Tenim facilitats de pagament personalitzades per a tu." }
+            ]
+        },
+        footer: "Autoescola Ramis - Pegant Fort des de 1999.",
+        footerNav: ["Navegació", "Troba'ns", "Horari d'Oficina", "Avis Legal", "Privacitat"],
+        gallery: {
+            title: "COMUNITAT", subtitle: "RAMIS",
+            insta: "Segueix el nostre dia a dia a @auto_escola_ramis",
+            btn: "Veure Instagram"
+        }
+    },
+    es: {
+        tagline: "PEGANDO FUERTE",
+        nav: ["PERMISOS", "MÉTODO", "VENTAJAS", "MATRÍCULA"],
+        hero: {
+            title: "AUTOESCUELA", subtitle: "RAMIS",
+            quote: "¡Porque soy lo que soy gracias a vosotros!!",
+            btn1: "RESERVA TU PLAZA", pack: "PACK ESTRELLA B", offer: "QUIERO ESTA OFERTA",
+            include: ["10 Prácticas VIP", "Teórica Express", "Traslados Incluidos", "Material Digital"]
+        },
+        stats: ["Alumnos Aprobados", "Éxito Teórica", "Años de Experiencia"],
+        intensives: {
+            t1: "CURSOS", t2: "INTENSIVOS", desc: "Diseñados para quienes no tienen tiempo que perder. El carnet, más rápido que nunca.",
+            card1: "TEÓRICA EXPRESS", card1d: "7 días de clases intensivas con todo lo necesario para aprobar a la primera.",
+            card2: "ONLINE 24/7", card2d: "Acceso total a la plataforma de tests de última generación desde cualquier dispositivo."
+        },
+        permisosTitle: ["TU", "CARNET"],
+        permisosList: [
+            { n: "Permiso B", d: "El carnet de coche de toda la vida.", p: "800€" },
+            { n: "B Automático", d: "Olvídate de las marchas. Fácil y cómodo.", p: "CONSULTAR" },
+            { n: "Motos", d: "A1 / A2 / AM. Siente la libertad sobre ruedas.", p: "CONSULTAR" }
+        ],
+        reviews: {
+            title: "NUESTROS", subtitle: "ALUMNOS",
+            items: [
+                { name: "Marc S.", text: "Método increíble. ¡Aprobé la teórica en una semana!", stars: 5 },
+                { name: "Elena R.", text: "Los traslados desde Simat son un lujo. ¡Muchas gracias!", stars: 5 },
+                { name: "Joan M.", text: "Vehículos modernos y profes muy pacientes.", stars: 5 }
+            ]
+        },
+        process: { title: "EL MÉTODO", subtitle: "RAMIS", steps: ["Inscripción", "Teórica", "Volante", "Licencia"] },
+        why: ["+25 AÑOS", "ALTA TASA APROBADOS", "VEHÍCULOS MODERNOS", "RECOGIDA A CASA", "PAGO FLEXIBLE", "PROFES VIPS"],
+        locations: {
+            title: "VALLDIGNA", subtitle: "POWER",
+            desc: "Si eres de Simat o Benifairó, te recogemos gratis. ¡Tú solo céntrate en conducir!",
+            labels: ["DIRECCIÓN", "CONTACTO"]
+        },
+        faq: {
+            title: "DUDAS", subtitle: "COMUNES",
+            items: [
+                { q: "¿Qué edad necesito?", a: "Puedes matricularte a los 17 años y 9 meses para la teórica." },
+                { q: "¿Puedo pagar a plazos?", a: "¡Sí! Tenemos facilidades de pago personalizadas para ti." }
+            ]
+        },
+        footer: "Autoescuela Ramis - Pegando Fuerte desde 1999.",
+        footerNav: ["Navegación", "Encuéntranos", "Horario de Oficina", "Aviso Legal", "Privacidad"],
+        gallery: {
+            title: "COMUNIDAD", subtitle: "RAMIS",
+            insta: "Sigue nuestro día a día en @auto_escola_ramis",
+            btn: "Ver Instagram"
+        }
+    },
+    en: {
+        tagline: "GOING STRONG",
+        nav: ["LICENSES", "METHOD", "ADVANTAGES", "ENROLL"],
+        hero: {
+            title: "DRIVING SCHOOL", subtitle: "RAMIS",
+            quote: "Because I am who I am thanks to you!!",
+            btn1: "BOOK YOUR SPOT", pack: "STAR PACK B", offer: "GET THIS OFFER",
+            include: ["10 VIP Lessons", "Express Theory", "Transfers Included", "Digital Material"]
+        },
+        stats: ["Students Passed", "Theory Success", "Years Experience"],
+        intensives: {
+            t1: "INTENSIVE", t2: "COURSES", desc: "Designed for those who have no time to waste. Your license, faster than ever.",
+            card1: "EXPRESS THEORY", card1d: "7 days of intensive classes with everything you need to pass first time.",
+            card2: "ONLINE 24/7", card2d: "Full access to our next-gen test platform from any device."
+        },
+        permisosTitle: ["YOUR", "LICENSE"],
+        permisosList: [
+            { n: "License B", d: "The classic car driving license.", p: "800€" },
+            { n: "B Automatic", d: "Forget about gears. Easy and comfortable.", p: "ENQUIRE" },
+            { n: "Motorcycles", d: "A1 / A2 / AM. Feel the freedom on wheels.", p: "ENQUIRE" }
+        ],
+        reviews: {
+            title: "OUR", subtitle: "STUDENTS",
+            items: [
+                { name: "Marc S.", text: "Incredible method. I passed the theory in one week!", stars: 5 },
+                { name: "Elena R.", text: "Pick-ups from Simat are a luxury. Thank you so much!", stars: 5 },
+                { name: "Joan M.", text: "Modern vehicles and very patient teachers.", stars: 5 }
+            ]
+        },
+        process: { title: "THE RAMIS", subtitle: "METHOD", steps: ["Enrollment", "Theory", "Driving", "License"] },
+        why: ["+25 YEARS", "HIGH PASS RATE", "MODERN VEHICLES", "HOME PICK-UP", "FLEXIBLE PAYMENT", "VIP TEACHERS"],
+        locations: {
+            title: "VALLDIGNA", subtitle: "POWER",
+            desc: "If you are from Simat or Benifairó, we pick you up for free. You just focus on driving!",
+            labels: ["ADDRESS", "CONTACT"]
+        },
+        faq: {
+            title: "COMMON", subtitle: "QUESTIONS",
+            items: [
+                { q: "What age do I need?", a: "You can enroll at 17 years and 9 months for the theory exam." },
+                { q: "Can I pay in installments?", a: "Yes! We have personalized payment plans for you." }
+            ]
+        },
+        footer: "Ramis Driving School - Going Strong since 1999.",
+        footerNav: ["Navigation", "Find Us", "Office Hours", "Legal Notice", "Privacy"],
+        gallery: {
+            title: "RAMIS", subtitle: "COMMUNITY",
+            insta: "Follow our daily updates @auto_escola_ramis",
+            btn: "View Instagram"
+        }
+    }
+};
+
+class RamisApp {
+    constructor() {
+        this.lang = 'ca';
+        this.contact = { 
+            whatsapp: "34622687585", 
+            address: "Av. Germanies, 35 B, Tavernes", 
+            phone: "961 038 918",
+            instagram: "autoescola_ramis"
+        };
+        window.app = this;
+        this.init();
+    }
+
+    init() {
+        this.render();
+        this.setupEventListeners();
+        this.initReveal();
+    }
+
+    setLanguage(lang) {
+        this.lang = lang;
+        this.render();
+        this.initReveal();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    setupEventListeners() {
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 30) {
+                nav.classList.add('bg-black/95', 'backdrop-blur-xl', 'py-2', 'border-b', 'border-white/10');
+            } else {
+                nav.classList.remove('bg-black/95', 'backdrop-blur-xl', 'py-2', 'border-b', 'border-white/10');
+            }
+        });
+    }
+
+    initReveal() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    render() {
+        const t = CONTENT[this.lang];
+        this.renderNav(t);
+        this.renderHero(t);
+        this.renderStats(t);
+        this.renderIntensives(t);
+        this.renderPermisos(t);
+        this.renderReviews(t);
+        this.renderProcess(t);
+        this.renderWhy(t);
+        this.renderLocations(t);
+        this.renderGallery(t);
+        this.renderFAQ(t);
+        this.renderFooter(t);
+        lucide.createIcons();
+    }
+
+    renderNav(t) {
+        document.getElementById("navbar").innerHTML = `
+            <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 md:py-5 flex justify-between items-center relative z-50">
+                <div class="flex items-center group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-red-600 rounded blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                        <div class="relative bg-black border border-white/10 px-3 py-1 rounded flex items-center gap-2">
+                            <span class="text-red-600 font-ramis text-2xl italic tracking-tighter">R</span>
+                            <div class="h-4 w-[1px] bg-white/20 mx-1"></div>
+                            <span class="text-white font-ramis text-lg tracking-tighter uppercase">
+                                Ramis <span class="text-red-600 italic hidden sm:inline">Autoescola</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 md:gap-8">
+                    <div class="relative flex items-center gap-1 group">
+                        <i data-lucide="languages" class="w-3.5 h-3.5 text-red-600"></i>
+                        <select onchange="app.setLanguage(this.value)" 
+                            class="bg-transparent text-white border-none text-[11px] font-black outline-none cursor-pointer appearance-none hover:text-red-600 transition-colors uppercase tracking-widest">
+                            <option value="ca" class="text-black" ${this.lang==='ca'?'selected':''}>CA</option>
+                            <option value="es" class="text-black" ${this.lang==='es'?'selected':''}>ES</option>
+                            <option value="en" class="text-black" ${this.lang==='en'?'selected':''}>EN</option>
+                        </select>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-red-600 rounded-full opacity-40 group-hover:opacity-100 animate-pulse transition duration-500 blur-sm"></div>
+                        <a href="https://wa.me/${this.contact.whatsapp}" 
+                            class="relative flex items-center gap-2 bg-red-600 px-5 md:px-8 py-2.5 md:py-3.5 rounded-full text-[10px] md:text-[11px] font-black text-white transition-all active:scale-95 uppercase tracking-[0.2em]">
+                            <i data-lucide="message-circle" class="w-4 h-4 hidden xs:block"></i>
+                            ${t.nav[3]}
+                        </a>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+renderHero(t) {
+    document.getElementById("hero").innerHTML = `
+        <div class="relative min-h-screen flex items-center overflow-hidden bg-[#050505]">
+            <div class="absolute inset-0 z-0">
+                <img src="fto-ramis-hero.png" 
+                     class="w-full h-full object-cover 
+                            object-[center_20%] lg:object-[right_center] 
+                            opacity-40 lg:opacity-60 scale-100" 
+                     alt="Ramis Autoescola">
+                
+                <div class="absolute inset-0 bg-black/60 lg:bg-transparent"></div>
+                
+                <div class="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/70 to-transparent hidden lg:block"></div>
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+            </div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full pt-20 pb-10 lg:py-0">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                    
+                    <div class="w-full lg:w-3/5 reveal text-center lg:text-left">
+                        <div class="inline-block bg-red-600/20 border border-red-600/40 px-3 py-1 rounded mb-4 lg:mb-6 skew-x-[-12deg]">
+                            <span class="text-red-500 text-[9px] lg:text-[10px] font-black tracking-[0.3em] uppercase inline-block skew-x-[12deg]">${t.tagline}</span>
+                        </div>
+                        
+                        <h1 class="text-4xl md:text-7xl xl:text-8xl font-ramis leading-[0.9] mb-4 lg:mb-6 tracking-tighter text-white uppercase drop-shadow-2xl">
+                            ${t.hero.title}<br>
+                            <span class="text-red-600 italic inline-block mt-1">${t.hero.subtitle}</span>
+                        </h1>
+                        
+                        <p class="text-zinc-300 text-xs md:text-lg font-medium mb-8 lg:mb-10 max-w-xs md:max-w-md mx-auto lg:mx-0 leading-relaxed italic">
+                            "${t.hero.quote}"
+                        </p>
+                        
+                        <div class="flex justify-center lg:justify-start">
+                            <a href="#permisos" class="bg-white text-black px-8 py-4 text-[9px] lg:text-[10px] font-black tracking-widest hover:bg-red-600 hover:text-white transition-all uppercase shadow-xl">
+                                ${t.hero.btn1}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-[380px] reveal z-20">
+                        <div class="glass p-1 rounded-[2rem] border border-white/10 shadow-2xl">
+                            <div class="bg-zinc-900/90 backdrop-blur-xl p-6 lg:p-8 rounded-[1.8rem] text-center">
+                                <span class="text-red-600 font-black text-[9px] mb-3 lg:mb-4 tracking-widest uppercase block">${t.hero.pack}</span>
+                                
+                                <div class="flex items-center justify-center gap-1 mb-3 lg:mb-4">
+                                    <span class="text-white text-6xl lg:text-8xl font-ramis tracking-tighter leading-none">800</span>
+                                    <span class="text-red-600 text-3xl lg:text-4xl font-ramis leading-none italic">€</span>
+                                </div>
+                                
+                                <ul class="text-left space-y-2 lg:space-y-3 mb-6 lg:mb-8">
+                                    ${t.hero.include.map(i => `
+                                        <li class="flex items-center gap-3">
+                                            <i data-lucide="check" class="text-red-600 w-3 h-3 lg:w-4 lg:h-4"></i>
+                                            <span class="text-zinc-400 text-[9px] lg:text-[10px] font-bold uppercase tracking-wide">${i}</span>
+                                        </li>`).join('')}
+                                </ul>
+                                
+                                <a href="https://wa.me/${this.contact.whatsapp}" class="block w-full bg-red-600 py-4 rounded-xl font-black text-[9px] lg:text-[10px] tracking-widest text-white hover:bg-white hover:text-black transition-all uppercase">
+                                    ${t.hero.offer}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>`;
+}
+
+
+renderGallery(t) {
+    const container = document.getElementById("gallery");
+    if (!container) return;
+
+    const photos = [
+        "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800", 
+        "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800"
+    ];
+
+    container.innerHTML = `
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 reveal">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-ramis tracking-tighter text-white uppercase">
+                        ${t.gallery.title} <span class="text-red-600 italic">${t.gallery.subtitle}</span>
+                    </h2>
+                    <p class="text-zinc-500 mt-2 uppercase tracking-widest text-[10px] font-bold">${t.gallery.insta}</p>
+                </div>
+                <a href="https://www.instagram.com/auto_escola_ramis/" target="_blank" 
+                   class="bg-white/5 border border-white/10 px-6 py-3 rounded-full text-[10px] font-black tracking-widest uppercase hover:bg-red-600 transition-all flex items-center gap-2">
+                    <i data-lucide="instagram" class="w-4 h-4 text-red-600"></i> ${t.gallery.btn}
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                <div class="reveal md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[0]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+                        <span class="text-white font-ramis text-xl">#PEGANTFORT</span>
+                    </div>
+                </div>
+                <div class="reveal relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[1]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="reveal relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[2]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="reveal md:col-span-2 relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[3]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="reveal relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[4]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="reveal relative group overflow-hidden rounded-3xl border border-white/5">
+                    <img src="${photos[5]}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+            </div>
+        </div>`;
+}
+
+    renderStats(t) {
+        const stats = ["+1500", "98%", "25"];
+        document.getElementById("stats").innerHTML = `
+            <div class="max-w-6xl mx-auto px-4 md:px-6 -mt-8 lg:-mt-16">
+                <div class="glass grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 py-8 md:py-12 rounded-3xl shadow-2xl">
+                    ${stats.map((v, i) => `
+                        <div class="text-center py-6 md:p-6 reveal">
+                            <div class="text-5xl md:text-6xl font-ramis text-white mb-2 tracking-tighter">${v}</div>
+                            <div class="text-red-600 text-[9px] font-black tracking-[0.2em] uppercase">${t.stats[i]}</div>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderIntensives(t) {
+        document.getElementById("intensives").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 gap-8 reveal text-center lg:text-left">
+                    <div>
+                        <h2 class="text-4xl md:text-6xl font-ramis leading-none mb-4 tracking-tighter text-white uppercase">
+                            ${t.intensives.t1}<br><span class="text-red-600 italic">${t.intensives.t2}</span>
+                        </h2>
+                        <div class="h-1.5 w-20 bg-red-600 rounded-full mx-auto lg:mx-0"></div>
+                    </div>
+                    <p class="text-zinc-500 max-w-sm font-bold uppercase text-[10px] md:text-xs tracking-[0.2em] leading-relaxed">${t.intensives.desc}</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass p-8 md:p-12 rounded-3xl reveal group">
+                        <div class="flex justify-between items-start mb-8">
+                            <div class="bg-red-600/10 p-3 rounded-xl"><i data-lucide="zap" class="text-red-600 w-8 h-8"></i></div>
+                            <span class="text-4xl md:text-6xl font-ramis text-white/5 tracking-tighter">07</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-ramis mb-4 tracking-tight text-white uppercase">${t.intensives.card1}</h3>
+                        <p class="text-zinc-400 font-medium text-[10px] md:text-xs leading-relaxed uppercase tracking-widest">${t.intensives.card1d}</p>
+                    </div>
+                    <div class="bg-red-600 p-8 md:p-12 rounded-3xl reveal group shadow-xl shadow-red-600/10">
+                        <div class="flex justify-between items-start mb-8 text-white">
+                            <div class="bg-black/20 p-3 rounded-xl"><i data-lucide="smartphone" class="w-8 h-8"></i></div>
+                            <span class="text-4xl md:text-6xl font-ramis text-black/10 tracking-tighter">APP</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-ramis mb-4 text-white tracking-tight uppercase">${t.intensives.card2}</h3>
+                        <p class="text-white/80 font-medium text-[10px] md:text-xs leading-relaxed uppercase tracking-widest">${t.intensives.card2d}</p>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    renderPermisos(t) {
+        const imgs = [
+            "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800",
+            "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800",
+            "https://images.unsplash.com/photo-1558981403-c5f91cbba527?q=80&w=800"
+        ];
+        document.getElementById("permisos").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-ramis text-center mb-16 reveal tracking-tighter text-white uppercase">
+                    ${t.permisosTitle[0]} <span class="text-red-600 italic">${t.permisosTitle[1]}</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    ${t.permisosList.map((p, i) => `
+                        <div class="reveal group flex flex-col h-full">
+                            <div class="relative h-64 md:h-80 rounded-3xl overflow-hidden mb-6">
+                                <img src="${imgs[i]}" class="w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition-all duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                                <div class="absolute bottom-6 left-6"><span class="text-xl md:text-2xl font-ramis text-white uppercase">${p.n}</span></div>
+                            </div>
+                            <div class="flex-grow flex flex-col px-2">
+                                <p class="text-zinc-500 text-[10px] font-bold uppercase tracking-widest mb-6 leading-relaxed flex-grow">${p.d}</p>
+                                <div class="flex justify-between items-center border-t border-white/10 pt-6 mt-auto">
+                                    <span class="text-2xl md:text-3xl font-ramis text-red-600 tracking-tighter">${p.p}</span>
+                                    <a href="https://wa.me/${this.contact.whatsapp}" class="text-[9px] font-black tracking-[0.2em] text-white uppercase hover:text-red-600 transition">INFO +</a>
+                                </div>
+                            </div>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderReviews(t) {
+        document.getElementById("reviews").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-6xl font-ramis tracking-tighter text-white uppercase">${t.reviews.title} <span class="text-red-600 italic">${t.reviews.subtitle}</span></h2>
+                    <div class="h-1 w-20 bg-red-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    ${t.reviews.items.map(r => `
+                        <div class="glass p-8 rounded-3xl border-none relative overflow-hidden group hover:bg-white/5 transition-all">
+                            <div class="flex gap-1 mb-4">${Array(r.stars).fill().map(() => `<i data-lucide="star" class="w-4 h-4 fill-red-600 text-red-600"></i>`).join('')}</div>
+                            <p class="text-white text-sm font-medium italic mb-6 leading-relaxed">"${r.text}"</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-black text-[10px] text-white">${r.name[0]}</div>
+                                <span class="text-zinc-500 font-black text-[10px] uppercase tracking-widest">${r.name}</span>
+                            </div>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderProcess(t) {
+        document.getElementById("process").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-5xl font-ramis text-center mb-12 md:mb-20 reveal text-white uppercase">${t.process.title} <span class="text-red-600">${t.process.subtitle}</span></h2>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                    ${t.process.steps.map((s, i) => `
+                        <div class="p-6 md:p-10 glass rounded-3xl text-center reveal group border-none">
+                            <div class="text-5xl md:text-7xl font-ramis text-white/5 mb-[-15px] md:mb-[-20px] transition-colors">${i+1}</div>
+                            <p class="font-black uppercase tracking-[0.2em] text-[9px] md:text-xs text-white relative z-10">${s}</p>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderWhy(t) {
+        document.getElementById("why").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6 overflow-hidden">
+                <div class="flex flex-wrap justify-center gap-x-8 md:gap-x-16 gap-y-6 md:gap-y-8">
+                    ${t.why.map(w => `
+                        <div class="flex items-center gap-3 reveal">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-white opacity-50"></i>
+                            <span class="font-black uppercase text-[8px] md:text-[10px] tracking-[0.2em] text-white whitespace-nowrap">${w}</span>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderLocations(t) {
+        document.getElementById("locations").innerHTML = `
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
+                <div class="reveal text-center lg:text-left">
+                    <h2 class="text-4xl md:text-6xl font-ramis mb-6 md:mb-8 tracking-tighter leading-none text-white uppercase">${t.locations.title}<br><span class="text-red-600 italic">${t.locations.subtitle}</span></h2>
+                    <p class="text-zinc-400 font-bold uppercase text-[10px] md:text-xs tracking-[0.2em] leading-relaxed mb-8 md:mb-12">${t.locations.desc}</p>
+                    <div class="space-y-4 max-w-sm mx-auto lg:mx-0 text-left">
+                        <div class="flex items-center gap-4 p-5 glass rounded-2xl">
+                            <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">${t.locations.labels[0]}</p>
+                                <p class="font-bold text-xs md:text-sm text-white">${this.contact.address}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-5 glass rounded-2xl">
+                            <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">${t.locations.labels[1]}</p>
+                                <p class="font-bold text-xs md:text-sm text-white">${this.contact.phone}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal h-64 md:h-[450px] rounded-3xl overflow-hidden glass p-1.5 grayscale opacity-80">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.41738520892!2d-0.2662!3d39.0494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDAyJzU3LjgiTiAwwrAxNSc1OC4zIlc!5e0!3m2!1sca!2ses!4v1625000000000!5m2!1sca!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>`;
+    }
+
+    renderFAQ(t) {
+        document.getElementById("faq").innerHTML = `
+            <div class="max-w-2xl mx-auto px-6">
+                <h2 class="text-3xl md:text-5xl font-ramis text-center mb-12 reveal tracking-tighter text-white uppercase">${t.faq.title} <span class="text-red-600 italic">${t.faq.subtitle}</span></h2>
+                <div class="space-y-4">
+                    ${t.faq.items.map((f, i) => `
+                        <div class="glass p-6 md:p-8 rounded-2xl md:rounded-3xl reveal border-none">
+                            <h4 class="font-black text-[10px] md:text-xs uppercase tracking-widest mb-3 text-red-600 flex gap-4 align-top">
+                                <span class="text-white opacity-20 font-ramis italic">0${i+1}</span> ${f.q}
+                            </h4>
+                            <p class="text-zinc-500 text-[9px] md:text-[10px] font-bold uppercase leading-relaxed tracking-widest pl-10">${f.a}</p>
+                        </div>`).join('')}
+                </div>
+            </div>`;
+    }
+
+    renderFooter(t) {
+        document.getElementById("footer").innerHTML = `
+            <footer class="bg-[#050505] pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
+                <div class="max-w-7xl mx-auto px-6 relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                        <div class="space-y-6">
+                            <div class="font-ramis text-2xl tracking-tighter text-white uppercase">RAMIS <span class="text-red-600 italic">AUTOESCOLA</span></div>
+                            <p class="text-zinc-500 text-[10px] font-bold leading-relaxed uppercase tracking-widest italic">${t.footer}</p>
+                            <div class="flex gap-4">
+                                <a href="https://instagram.com/${this.contact.instagram}" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                                <a href="https://wa.me/${this.contact.whatsapp}" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[0]}</h4>
+                            <ul class="space-y-3">
+                                ${t.nav.map(item => `<li><a href="#${item.toLowerCase()}" class="text-zinc-500 hover:text-red-600 text-[10px] font-bold uppercase tracking-widest transition-colors flex items-center gap-2 group"><span class="w-0 group-hover:w-2 h-[1px] bg-red-600 transition-all"></span>${item}</a></li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[1]}</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-red-600 mt-0.5"></i><p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest leading-relaxed">${this.contact.address}<br>Tavernes de la Valldigna</p></div>
+                                <div class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-red-600"></i><p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">${this.contact.phone}</p></div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[2]}</h4>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <div class="flex justify-between mb-2"><span class="text-zinc-500 text-[9px] font-black uppercase">Mon - Thu</span><span class="text-white text-[9px] font-black uppercase">16:00 - 20:00</span></div>
+                                <div class="flex justify-between"><span class="text-zinc-500 text-[9px] font-black uppercase">Friday</span><span class="text-red-600 text-[9px] font-black uppercase">By Appt.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <p class="text-zinc-600 text-[9px] font-bold uppercase tracking-widest">© ${new Date().getFullYear()} Autoescola Ramis.</p>
+                        <div class="flex gap-8">
+                            <a href="#" class="text-zinc-600 hover:text-white text-[9px] font-bold uppercase tracking-widest">${t.footerNav[3]}</a>
+                            <a href="#" class="text-zinc-600 hover:text-white text-[9px] font-bold uppercase tracking-widest">${t.footerNav[4]}</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>`;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => { new RamisApp(); });

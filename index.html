@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ca" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramis Autoescola | Pegant Fort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --ramis-red: #e11d48; }
+        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .font-ramis { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; }
+        
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: var(--ramis-red); border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500"></nav>
+    
+    <main>
+        <section id="hero"></section>
+        
+        <div id="stats" class="relative z-10"></div>
+        
+        <section id="intensives" class="py-24"></section>
+        
+        <section id="permisos" class="py-24 bg-[#080808]"></section>
+        
+        <section id="reviews" class="py-24"></section>
+        
+        <section id="process" class="py-24 bg-[#080808]"></section>
+        
+        <div id="why" class="py-12 bg-red-600"></div>
+        <section id="gallery" class="py-24 bg-[#050505] overflow-hidden"></section>
+        
+        <section id="locations" class="py-24"></section>
+        
+        <section id="faq" class="py-24 bg-[#080808]"></section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <a href="https://wa.me/34622687585" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 p-4 rounded-full shadow-2xl hover:rotate-12 hover:scale-110 transition-all">
+        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
