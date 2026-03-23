@@ -15,7 +15,7 @@ export const CONFIG = {
             items: [
                 { 
                     name: "Permís B - Pack 800€", 
-                    desc: "Oferta estrella: 10 pràctiques, teòrica, manual, tests online i trasllats inclosos.", 
+                    desc: "Oferta estrella: 9 pràctiques, teòrica, manual, tests online i trasllats inclosos.", 
                     price: "800€", 
                     img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800" 
                 },
@@ -31,7 +31,7 @@ export const CONFIG = {
             category: "Moto",
             items: [
                 { 
-                    name: "A1 / A2 / AM", 
+                    name: "AM / A1 / A2 / A", 
                     desc: "Tots els permisos de moto amb els millors professors de Tavernes.", 
                     price: "Consultar", 
                     img: "https://images.unsplash.com/photo-1558981403-c5f91cbba527?q=80&w=800" 
