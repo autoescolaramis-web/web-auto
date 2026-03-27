@@ -47,10 +47,10 @@ permisosTitle: ["EL TEU", "CARNET"],
                 detalles: "Inclou: Matrícula, Taxa, Teòrica, 8 pràctiques de circulació i Examen."
             },
             { 
-                n: "Recuperació de punts", 
+                n: "Recuperació de punts (Tavernes)", 
                 d: "No et quedis sense conduir.", 
                 p: "CONSULTAR",
-                detalles: "Cursos ràpids per recuperar el teu carnet. Contacta amb nosaltres per a pròximes dates i preus."
+                detalles: "Centre autoritzat per a la recuperació de punts."
             }
         ],
         reviews: {
@@ -131,10 +131,10 @@ permisosTitle: ["TU", "CARNET"],
                 detalles: "Incluye: Matrícula, Tasa, Teórica, 8 prácticas de circulación y Examen."
             },
             { 
-                n: "Recuperación de puntos", 
+                n: "Recuperación de puntos (Tavernes)", 
                 d: "No te quedes sin conducir.", 
                 p: "CONSULTAR",
-                detalles: "Cursos rápidos para recuperar tu carnet. Contacta con nosotros para próximas fechas y precios."
+                detalles: "Centro autorizado para la recuperación de puntos."
             }
         ],
         reviews: {
@@ -215,10 +215,10 @@ permisosList: [
         detalles: "Includes: Enrollment, Fees, Theory, 8 driving lessons and Exam."
     },
     { 
-        n: "Points Recovery", 
+        n: "Points Recovery (Tavernes)", 
         d: "Get back on the road.", 
         p: "ENQUIRE",
-        detalles: "Fast courses to get your license back. Contact us for upcoming dates and pricing."
+        detalles: "Authorized center for points recovery."
     }
 ],
         reviews: {
