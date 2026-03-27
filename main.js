@@ -487,7 +487,7 @@ renderGallery(t) {
 }
 
     renderStats(t) {
-        const stats = ["+1500", "98%", "25"];
+        const stats = ["+1200", "98%", "25"];
         document.getElementById("stats").innerHTML = `
             <div class="max-w-6xl mx-auto px-4 md:px-6 -mt-8 lg:-mt-16">
                 <div class="glass grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 py-8 md:py-12 rounded-3xl shadow-2xl">
