@@ -14,11 +14,44 @@ const CONTENT = {
             card1: "TEÒRICA EXPRESS", card1d: "7 dies de classes intensives amb tot el que necessites per aprovar a la primera.",
             card2: "ONLINE 24/7", card2d: "Accés total a la plataforma de tests d'última generació des de qualsevol dispositiu."
         },
-        permisosTitle: ["EL TEU", "CARNET"],
+permisosTitle: ["EL TEU", "CARNET"],
         permisosList: [
-            { n: "Permís B", d: "El carnet de cotxe de tota la vida.", p: "800€" },
-            { n: "B Automàtic", d: "Oblida't de les marxes. Fàcil i còmode.", p: "CONSULTAR" },
-            { n: "Motos", d: "AM / A1 / A2 / A. Sent la llibertat sobre rodes.", p: "CONSULTAR" }
+            { 
+                n: "Permís AM", 
+                d: "Ciclomotors fins a 50cc.", 
+                p: "390€",
+                detalles: "Inclou: Matrícula, Taxa, Teòrica, 2 pràctiques en circuit (30min) i Examen."
+            },
+{ 
+                n: "Permís A1", 
+                d: "Motocicletes lleugeres fins a 125cc.", 
+                p: "880€",
+                detalles: "Inclou: Matrícula, Taxa, Teòrica, 4 pràctiques en circuit tancat (30min), 2 pràctiques en obert (45min) i Exàmens."
+            },
+            { 
+                n: "Permís A2 ", 
+                d: "Motocicletes de potència mitjana.", 
+                p: "670€",
+                detalles: "Inclou: Matrícula, Taxa, Teòrica, 2 pràctiques en circuit (30min), 2 pràctiques en obert (45min) i Exàmens."
+            },
+            { 
+                n: "Permís A ", 
+                d: "Motocicletes sense limit.", 
+                p: "550€",
+                detalles: "Tot incluit"
+            },
+            { 
+                n: "Permís B", 
+                d: "Automòbils i vehicles lleugers.", 
+                p: "800€",
+                detalles: "Inclou: Matrícula, Taxa, Teòrica, 8 pràctiques de circulació i Examen."
+            },
+            { 
+                n: "Recuperació de punts", 
+                d: "No et quedis sense conduir.", 
+                p: "CONSULTAR",
+                detalles: "Cursos ràpids per recuperar el teu carnet. Contacta amb nosaltres per a pròximes dates i preus."
+            }
         ],
         reviews: {
             title: "ELS NOSTRES", subtitle: "ALUMNES",
@@ -51,7 +84,7 @@ const CONTENT = {
         }
     },
     es: {
-        tagline: "PEGANDO FUERTE",
+        tagline: "PEGANT FORT",
         nav: ["PERMISOS", "MÉTODO", "VENTAJAS", "MATRÍCULA"],
         hero: {
             title: "AUTOESCUELA", subtitle: "RAMIS",
@@ -65,11 +98,44 @@ const CONTENT = {
             card1: "TEÓRICA EXPRESS", card1d: "7 días de clases intensivas con todo lo necesario para aprobar a la primera.",
             card2: "ONLINE 24/7", card2d: "Acceso total a la plataforma de tests de última generación desde cualquier dispositivo."
         },
-        permisosTitle: ["TU", "CARNET"],
+permisosTitle: ["TU", "CARNET"],
         permisosList: [
-            { n: "Permiso B", d: "El carnet de coche de toda la vida.", p: "800€" },
-            { n: "B Automático", d: "Olvídate de las marchas. Fácil y cómodo.", p: "CONSULTAR" },
-            { n: "Motos", d: "AM / A1 / A2 / A. Siente la libertad sobre ruedas.", p: "CONSULTAR" }
+            { 
+                n: "Permiso AM", 
+                d: "Ciclomotores hasta 50cc.", 
+                p: "390€",
+                detalles: "Incluye: Matrícula, Tasa, Teórica, 2 prácticas en circuito (30min) y Examen."
+            },
+            { 
+                n: "Permiso A1 ", 
+                d: "Motocicletas ligera hasta 125cc.", 
+                p: "880€",
+                detalles: "Incluye: Matrícula, Tasa, Teórica, 4 prácticas en circuito cerrado (30min cada una), 2 prácticas en abierto (45min) y Exámenes."
+            },
+            { 
+                n: "Permiso A2 ", 
+                d: "Motocicletas de potencia media.", 
+                p: "670€",
+                detalles: "Incluye: Matrícula, Tasa, Teórica, 2 prácticas en circuito cerrado (30min cada una), 2 prácticas en abierto (45min) y Exámenes."
+            },
+                        { 
+                n: "Permiso A ", 
+                d: "Motocicletas sin limite .", 
+                p: "550€",
+                detalles: "Todo incluido"
+            },
+            { 
+                n: "Permiso B", 
+                d: "Automóviles y vehículos ligeros.", 
+                p: "800€",
+                detalles: "Incluye: Matrícula, Tasa, Teórica, 8 prácticas de circulación y Examen."
+            },
+            { 
+                n: "Recuperación de puntos", 
+                d: "No te quedes sin conducir.", 
+                p: "CONSULTAR",
+                detalles: "Cursos rápidos para recuperar tu carnet. Contacta con nosotros para próximas fechas y precios."
+            }
         ],
         reviews: {
             title: "NUESTROS", subtitle: "ALUMNOS",
@@ -102,7 +168,7 @@ const CONTENT = {
         }
     },
     en: {
-        tagline: "GOING STRONG",
+        tagline: "PEGANT FORT",
         nav: ["LICENSES", "METHOD", "ADVANTAGES", "ENROLL"],
         hero: {
             title: "DRIVING SCHOOL", subtitle: "RAMIS",
@@ -116,12 +182,45 @@ const CONTENT = {
             card1: "EXPRESS THEORY", card1d: "7 days of intensive classes with everything you need to pass first time.",
             card2: "ONLINE 24/7", card2d: "Full access to our next-gen test platform from any device."
         },
-        permisosTitle: ["YOUR", "LICENSE"],
-        permisosList: [
-            { n: "License B", d: "The classic car driving license.", p: "800€" },
-            { n: "B Automatic", d: "Forget about gears. Easy and comfortable.", p: "ENQUIRE" },
-            { n: "Motorcycles", d: "AM / A1 / A2 / A. Feel the freedom on wheels.", p: "ENQUIRE" }
-        ],
+permisosTitle: ["YOUR", "LICENSE"],
+permisosList: [
+    { 
+        n: "License AM", 
+        d: "Mopeds up to 50cc.", 
+        p: "390€",
+        detalles: "Includes: Enrollment, Fees, Theory, 2 track lessons (30min each) and Exam."
+    },
+    { 
+        n: "License A1", 
+        d: "Light motorcycles up to 125cc.", 
+        p: "880€",
+        detalles: "Includes: Enrollment, Fees, Theory, 4 closed circuit lessons (30min each), 2 road lessons (45min) and Exams."
+    },
+    { 
+        n: "License A2", 
+        d: "Medium power motorcycles.", 
+        p: "670€",
+        detalles: "Includes: Enrollment, Fees, Theory, 2 closed circuit lessons (30min each), 2 road lessons (45min) and Exams."
+    },
+    { 
+        n: "License A", 
+        d: "All motorcycles (No limit).", 
+        p: "550€",
+        detalles: "All inclusive (Training course)."
+    },
+    { 
+        n: "License B", 
+        d: "Cars and light vehicles.", 
+        p: "800€",
+        detalles: "Includes: Enrollment, Fees, Theory, 8 driving lessons and Exam."
+    },
+    { 
+        n: "Points Recovery", 
+        d: "Get back on the road.", 
+        p: "ENQUIRE",
+        detalles: "Fast courses to get your license back. Contact us for upcoming dates and pricing."
+    }
+],
         reviews: {
             title: "OUR", subtitle: "STUDENTS",
             items: [
@@ -221,15 +320,24 @@ renderNav(t) {
     document.getElementById("navbar").innerHTML = `
         <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 md:py-5 flex justify-between items-center relative z-50">
             
-            <div class="flex items-center group cursor-pointer py-2" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<div class="flex items-center group cursor-pointer py-2" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                 <div class="relative flex items-center justify-center">
                     
-                    <div class="absolute inset-0 bg-red-600/40 rounded-full blur-[45px] opacity-70 group-hover:opacity-100 transition duration-700 scale-[2]"></div>
+                    <div class="absolute inset-0 bg-red-600/50 rounded-full blur-[60px] opacity-80 group-hover:opacity-100 transition duration-700 scale-[2.2]"></div>
                     
                     <img src="img/logo_ramis.png" 
                         alt="Logo Autoescola Ramis" 
-                        class="h-14 md:h-24 w-auto object-contain relative z-10 transition-all duration-500 group-hover:scale-105"
-                        style="filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.7)) brightness(1.3) contrast(1.1);">
+                        class="h-14 md:h-24 w-auto object-contain relative z-10 transition-all duration-700 group-hover:scale-105"
+                        style="filter: 
+                            /* Sombra 1: Brillo intenso y cercano al logo (como un neón) */
+                            drop-shadow(0 0 15px rgba(255, 0, 0, 0.9)) 
+                            /* Sombra 2: Sombra secundaria para dar profundidad y expansión */
+                            drop-shadow(0 0 35px rgba(255, 0, 0, 0.8))
+                            /* Sombra 3: Expansión final para que se vea mucho más */
+                            drop-shadow(0 0 55px rgba(255, 0, 0, 0.7))
+                            
+                            /* Ajustes de imagen para que no se apague */
+                            brightness(1.5) contrast(1.2);">
                         
                 </div>
             </div>
@@ -425,36 +533,57 @@ renderGallery(t) {
             </div>`;
     }
 
-    renderPermisos(t) {
-const imgs = [
-    "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800", // Coche
-    "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800", // Interior/Conducción
-    "https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?q=80&w=800"  // Moto (Nueva)
-];
-        document.getElementById("permisos").innerHTML = `
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl md:text-6xl font-ramis text-center mb-16 reveal tracking-tighter text-white uppercase">
-                    ${t.permisosTitle[0]} <span class="text-red-600 italic">${t.permisosTitle[1]}</span>
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    ${t.permisosList.map((p, i) => `
-                        <div class="reveal group flex flex-col h-full">
-                            <div class="relative h-64 md:h-80 rounded-3xl overflow-hidden mb-6">
-                                <img src="${imgs[i]}" class="w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition-all duration-700">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                                <div class="absolute bottom-6 left-6"><span class="text-xl md:text-2xl font-ramis text-white uppercase">${p.n}</span></div>
+renderPermisos(t) {
+    const imgs = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegLKYh-6dHs0hdAV-l1cgTQIbEmdeliWi9w&s", // AM
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgjjW9REjDRV2u42KtGSihmZXcp1pbpDM25g&s", // A1
+        "https://maquinamotors.com/blog/wp-content/uploads/2023/08/CB500F-min.png", // A2
+        "https://autoescuelacatedra.com/wp-content/uploads/2022/03/carnet-de-moto-a-ciudad-real.jpg", // A
+        "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800", // B
+        "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800"  // Punts
+    ];
+
+    document.getElementById("permisos").innerHTML = `
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-ramis text-center mb-16 reveal tracking-tighter text-white uppercase">
+                ${t.permisosTitle[0]} <span class="text-red-600 italic">${t.permisosTitle[1]}</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                ${t.permisosList.map((p, i) => `
+                    <div class="reveal group flex flex-col h-full bg-zinc-900/30 p-4 rounded-[2rem] border border-white/5 transition-all hover:border-red-600/30">
+                        <div class="relative h-64 md:h-80 rounded-3xl overflow-hidden mb-6">
+                            <img src="${imgs[i] || imgs[0]}" class="w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6"><span class="text-xl md:text-2xl font-ramis text-white uppercase">${p.n}</span></div>
+                        </div>
+                        <div class="flex-grow flex flex-col px-2">
+                            <p class="text-zinc-400 text-[11px] font-medium uppercase tracking-widest mb-4 leading-relaxed">${p.d}</p>
+                            
+                            <div id="info-${i}" class="hidden mb-4 p-4 bg-white/5 rounded-2xl border border-white/10 animate-fade-in">
+                                <p class="text-[10px] text-zinc-300 leading-relaxed font-bold uppercase tracking-tighter">
+                                    ${p.detalles}
+                                </p>
                             </div>
-                            <div class="flex-grow flex flex-col px-2">
-                                <p class="text-zinc-500 text-[10px] font-bold uppercase tracking-widest mb-6 leading-relaxed flex-grow">${p.d}</p>
-                                <div class="flex justify-between items-center border-t border-white/10 pt-6 mt-auto">
+
+                            <div class="flex flex-col gap-4 border-t border-white/10 pt-6 mt-auto">
+                                <div class="flex justify-between items-center">
                                     <span class="text-2xl md:text-3xl font-ramis text-red-600 tracking-tighter">${p.p}</span>
-                                    <a href="https://wa.me/${this.contact.whatsapp}" class="text-[9px] font-black tracking-[0.2em] text-white uppercase hover:text-red-600 transition">INFO +</a>
+                                    <button onclick="document.getElementById('info-${i}').classList.toggle('hidden')" 
+                                            class="text-[9px] font-black tracking-[0.2em] text-white/60 uppercase hover:text-white transition">
+                                        INFO +
+                                    </button>
                                 </div>
+                                
+                                <a href="tel:622687585" 
+                                   class="w-full bg-red-600 hover:bg-red-700 text-white text-center py-3 rounded-xl text-[10px] font-black tracking-[0.2em] uppercase transition-all transform active:scale-95 shadow-lg shadow-red-600/20">
+                                    RESERVAR ARA
+                                </a>
                             </div>
-                        </div>`).join('')}
-                </div>
-            </div>`;
-    }
+                        </div>
+                    </div>`).join('')}
+            </div>
+        </div>`;
+}
 
     renderReviews(t) {
         document.getElementById("reviews").innerHTML = `
@@ -504,33 +633,55 @@ const imgs = [
             </div>`;
     }
 
-    renderLocations(t) {
-        document.getElementById("locations").innerHTML = `
-            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
-                <div class="reveal text-center lg:text-left">
-                    <h2 class="text-4xl md:text-6xl font-ramis mb-6 md:mb-8 tracking-tighter leading-none text-white uppercase">${t.locations.title}<br><span class="text-red-600 italic">${t.locations.subtitle}</span></h2>
-                    <p class="text-zinc-400 font-bold uppercase text-[10px] md:text-xs tracking-[0.2em] leading-relaxed mb-8 md:mb-12">${t.locations.desc}</p>
-                    <div class="space-y-4 max-w-sm mx-auto lg:mx-0 text-left">
-                        <div class="flex items-center gap-4 p-5 glass rounded-2xl">
-                            <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
-                            <div>
-                                <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">${t.locations.labels[0]}</p>
-                                <p class="font-bold text-xs md:text-sm text-white">${this.contact.address}</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4 p-5 glass rounded-2xl">
-                            <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="phone" class="w-5 h-5"></i></div>
-                            <div>
-                                <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">${t.locations.labels[1]}</p>
-                                <p class="font-bold text-xs md:text-sm text-white">${this.contact.phone}</p>
-                            </div>
+renderLocations(t) {
+    document.getElementById("locations").innerHTML = `
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12 md:mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-ramis tracking-tighter leading-none text-white uppercase">
+                    ${t.locations.title}<br><span class="text-red-600 italic">${t.locations.subtitle}</span>
+                </h2>
+                <p class="text-zinc-400 font-bold uppercase text-[10px] md:text-xs tracking-[0.2em] leading-relaxed mt-6 max-w-2xl mx-auto">
+                    ${t.locations.desc}
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
+                
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-center gap-4 p-5 glass rounded-2xl border border-white/5 hover:border-red-600/30 transition-all">
+                        <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                        <div>
+                            <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">TAVERNES DE LA VALLDIGNA</p>
+                            <p class="font-bold text-xs md:text-sm text-white">Av. Germanies, 35 B, Tavernes</p>
+                            <a href="tel:622687585" class="text-[10px] text-red-600 font-bold tracking-widest hover:underline tracking-[0.1em]">622 687 585</a>
                         </div>
                     </div>
+                    <div class="h-64 md:h-80 rounded-3xl overflow-hidden glass p-1 grayscale opacity-70 border border-white/10 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198508.5535604322!2d-0.2970016195516005!3d38.9766055990213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c72ae1c9122f%3A0x5d9bc38d9601d9e7!2sRamis%20Autoescuela!5e0!3m2!1ses!2ses!4v1774621715552!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="reveal h-64 md:h-[450px] rounded-3xl overflow-hidden glass p-1.5 grayscale opacity-80">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.492982314533!2d-0.26642482349994717!3d39.07246723635452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c72ae1c9122f%3A0x5d9bc38d9601d9e7!2sRamis%20Autoescuela!5e0!3m2!1ses!2ses!4v1774275789692!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
-            </div>`;
+
+                <div class="reveal flex flex-col gap-6">
+                    <div class="flex items-center gap-4 p-5 glass rounded-2xl border border-white/5 hover:border-red-600/30 transition-all">
+                        <div class="bg-red-600 p-2.5 rounded-lg text-white"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                        <div>
+                            <p class="text-[9px] text-zinc-500 font-black uppercase tracking-widest">GANDIA</p>
+                            <p class="font-bold text-xs md:text-sm text-white">C/ Juan Ramón Jiménez, 3, Gandia</p>
+                            <a href="tel:622687585" class="text-[10px] text-red-600 font-bold tracking-widest hover:underline tracking-[0.1em]">622 687 585</a>
+                        </div>
+                    </div>
+                    <div class="h-64 md:h-80 rounded-3xl overflow-hidden glass p-1 grayscale opacity-70 border border-white/10 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49627.285910581595!2d-0.17339449999999998!3d38.9763951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e9ef1b5cca7b%3A0xfe7bee2b98029aaa!2sRamis%20Autoescuela!5e0!3m2!1ses!2ses!4v1774621685191!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>`;
+    
+    if (window.lucide) {
+        lucide.createIcons();
     }
+}
 
     renderFAQ(t) {
         document.getElementById("faq").innerHTML = `
@@ -548,7 +699,7 @@ const imgs = [
             </div>`;
     }
 
-    renderFooter(t) {
+renderFooter(t) {
         document.getElementById("footer").innerHTML = `
             <footer class="bg-[#050505] pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
                 <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -561,27 +712,52 @@ const imgs = [
                                 <a href="https://wa.me/${this.contact.whatsapp}" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
                             </div>
                         </div>
+
                         <div class="space-y-6">
                             <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[0]}</h4>
                             <ul class="space-y-3">
                                 ${t.nav.map(item => `<li><a href="#${item.toLowerCase()}" class="text-zinc-500 hover:text-red-600 text-[10px] font-bold uppercase tracking-widest transition-colors flex items-center gap-2 group"><span class="w-0 group-hover:w-2 h-[1px] bg-red-600 transition-all"></span>${item}</a></li>`).join('')}
                             </ul>
                         </div>
+
                         <div class="space-y-6">
                             <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[1]}</h4>
                             <div class="space-y-4">
-                                <div class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-red-600 mt-0.5"></i><p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest leading-relaxed">${this.contact.address}<br>Tavernes de la Valldigna</p></div>
-                                <div class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-red-600"></i><p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">${this.contact.phone}</p></div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-red-600 mt-0.5"></i>
+                                    <div>
+                                        <p class="text-white text-[9px] font-black uppercase tracking-widest mb-1">Tavernes</p>
+                                        <p class="text-zinc-500 text-[9px] font-bold uppercase tracking-widest leading-tight">Av. Germanies, 35 B</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-red-600 mt-0.5"></i>
+                                    <div>
+                                        <p class="text-white text-[9px] font-black uppercase tracking-widest mb-1">Gandia</p>
+                                        <p class="text-zinc-500 text-[9px] font-bold uppercase tracking-widest leading-tight">C/ J. Ramón Jiménez, 3</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                         <div class="space-y-6">
                             <h4 class="text-white font-black text-[11px] tracking-[0.2em] uppercase">${t.footerNav[2]}</h4>
-                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
-                                <div class="flex justify-between mb-2"><span class="text-zinc-500 text-[9px] font-black uppercase">Mon - Thu</span><span class="text-white text-[9px] font-black uppercase">16:00 - 20:00</span></div>
-                                <div class="flex justify-between"><span class="text-zinc-500 text-[9px] font-black uppercase">Friday</span><span class="text-red-600 text-[9px] font-black uppercase">By Appt.</span></div>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5 space-y-3">
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-zinc-500 text-[9px] font-black uppercase tracking-tighter italic">Lunes - Viernes</span>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-white text-[10px] font-black">10:00 – 13:00</span>
+                                        <span class="text-red-600 text-[10px] font-black">16:00 – 20:00</span>
+                                    </div>
+                                </div>
+                                <div class="pt-2 border-t border-white/5 flex justify-between">
+                                    <span class="text-zinc-600 text-[9px] font-black uppercase tracking-tighter">Sáb - Dom</span>
+                                    <span class="text-zinc-600 text-[9px] font-black uppercase tracking-tighter">Cerrado</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                         <p class="text-zinc-600 text-[9px] font-bold uppercase tracking-widest">© ${new Date().getFullYear()} Autoescola Ramis.</p>
                         <div class="flex gap-8">
@@ -591,6 +767,8 @@ const imgs = [
                     </div>
                 </div>
             </footer>`;
+        
+        if (window.lucide) lucide.createIcons();
     }
 }
 

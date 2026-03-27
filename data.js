@@ -20,10 +20,10 @@ export const CONFIG = {
                     img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800" 
                 },
                 { 
-                    name: "B Automàtic", 
-                    desc: "La forma més fàcil i ràpida de treure't el carnet sense patir pel canvi de marxes.", 
+                    name: "Recuperació de punts", 
+                    desc: "No et quedis sense circular. T'ajudem a recuperar els teus punts de la forma més ràpida i senzilla.", 
                     price: "Consultar", 
-                    img: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800" 
+                    img: "https://images.unsplash.com/photo-1506010233742-0266948e2c5b?q=80&w=800" 
                 }
             ]
         },
